@@ -1,0 +1,24 @@
+# Render Blueprint: one Docker web service serving the API and the built frontend.
+# Free plan: spins down after 15 min idle, ephemeral disk (audit history resets on restart).
+services:
+  - type: web
+    name: rankwise-seo-audit
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      - key: CORS_ORIGINS
+        value: https://rankwise-seo-audit.onrender.com
+      - key: MAX_PAGES_LIMIT
+        value: "50"
+      - key: MAX_DEPTH_LIMIT
+        value: "3"
+      - key: CONCURRENCY
+        value: "3"
+      - key: CRAWL_DELAY_S
+        value: "0.5"
+      - key: LLM_PROVIDER
+        value: none
+      - key: LLM_API_KEY
+        sync: false

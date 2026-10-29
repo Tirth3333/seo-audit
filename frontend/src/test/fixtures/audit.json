@@ -1,0 +1,1031 @@
+{
+  "id": "synthetic-demo-shop",
+  "start_url": "https://shop.example.com/",
+  "domain": "shop.example.com",
+  "status": "completed",
+  "created_at": "2026-10-28T13:38:26+00:00",
+  "started_at": "2026-10-28T13:38:26+00:00",
+  "finished_at": "2026-10-28T13:38:26+00:00",
+  "config": {
+    "max_pages": 30,
+    "max_depth": 3,
+    "check_uncrawled_links": true,
+    "concurrency": 4,
+    "timeout_s": 10.0,
+    "max_response_bytes": 3000000,
+    "link_check_limit": 50,
+    "user_agent": "RankwiseSEOAuditBot/1.0 (+https://github.com/your-username/seo-audit)"
+  },
+  "progress": {
+    "phase": "done",
+    "pages_crawled": 6,
+    "links_checked": 0,
+    "queued": 0,
+    "current_url": null,
+    "max_pages": 30
+  },
+  "error": null,
+  "summary": {
+    "pages_crawled": 6,
+    "pages_link_checked": 0,
+    "total_issues": 27,
+    "by_severity": {
+      "critical": 1,
+      "high": 4,
+      "medium": 6,
+      "low": 15,
+      "info": 1
+    },
+    "by_category": {
+      "Meta Descriptions": 7,
+      "Links": 3,
+      "Titles": 3,
+      "Headings": 3,
+      "Redirects": 2,
+      "Content": 2,
+      "Security": 1,
+      "Mobile": 1,
+      "Images": 1,
+      "Indexability": 1,
+      "Canonicalization": 1,
+      "Accessibility": 1,
+      "Crawlability": 1
+    },
+    "health_score": 37.7
+  },
+  "site": {
+    "robots_txt_status": 200,
+    "robots_txt_found": true,
+    "sitemaps_declared": [
+      "https://shop.example.com/sitemap.xml"
+    ],
+    "sitemap_url_checked": "https://shop.example.com/sitemap.xml",
+    "sitemap_status": 200,
+    "sitemap_found": true,
+    "blocked_by_robots": [
+      "https://shop.example.com/admin/login"
+    ]
+  },
+  "pages": [
+    {
+      "url": "https://shop.example.com/",
+      "final_url": "https://shop.example.com/",
+      "status": 200,
+      "depth": 0,
+      "content_type": "text/html; charset=utf-8",
+      "title": "Handmade Ceramics & Homeware | Example Shop",
+      "meta_description": "Handmade ceramics and homeware, designed in small batches and shipped worldwide from our studio.",
+      "h1_count": 1,
+      "word_count": 298,
+      "internal_links": 10,
+      "redirect_chain": [],
+      "elapsed_ms": 0,
+      "error": null,
+      "crawled": true
+    },
+    {
+      "url": "https://shop.example.com/about",
+      "final_url": "https://shop.example.com/about",
+      "status": 200,
+      "depth": 1,
+      "content_type": "text/html",
+      "title": "Shop",
+      "meta_description": null,
+      "h1_count": 0,
+      "word_count": 5,
+      "internal_links": 1,
+      "redirect_chain": [],
+      "elapsed_ms": 0,
+      "error": null,
+      "crawled": true
+    },
+    {
+      "url": "https://shop.example.com/products",
+      "final_url": "https://shop.example.com/products",
+      "status": 200,
+      "depth": 1,
+      "content_type": "text/html",
+      "title": "Products and Contact | Example Shop",
+      "meta_description": "Browse our full range.",
+      "h1_count": 1,
+      "word_count": 285,
+      "internal_links": 1,
+      "redirect_chain": [],
+      "elapsed_ms": 0,
+      "error": null,
+      "crawled": true
+    },
+    {
+      "url": "https://shop.example.com/blog",
+      "final_url": "https://shop.example.com/blog",
+      "status": 200,
+      "depth": 1,
+      "content_type": "text/html",
+      "title": "The Example Shop Journal: Stories, Studio Notes, Glazing Experiments and Behind-the-Scenes Updates",
+      "meta_description": "Browse our full range.",
+      "h1_count": 2,
+      "word_count": 285,
+      "internal_links": 1,
+      "redirect_chain": [],
+      "elapsed_ms": 0,
+      "error": null,
+      "crawled": true
+    },
+    {
+      "url": "https://shop.example.com/contact",
+      "final_url": "https://shop.example.com/contact",
+      "status": 200,
+      "depth": 1,
+      "content_type": "text/html",
+      "title": null,
+      "meta_description": "Handmade ceramics and homeware, designed in small batches and shipped worldwide from our studio.",
+      "h1_count": 1,
+      "word_count": 3,
+      "internal_links": 0,
+      "redirect_chain": [],
+      "elapsed_ms": 0,
+      "error": null,
+      "crawled": true
+    },
+    {
+      "url": "https://shop.example.com/old-page",
+      "final_url": "https://shop.example.com/about",
+      "status": 200,
+      "depth": 1,
+      "content_type": "text/html",
+      "title": "Shop",
+      "meta_description": null,
+      "h1_count": 0,
+      "word_count": 5,
+      "internal_links": 1,
+      "redirect_chain": [
+        {
+          "url": "https://shop.example.com/old-page",
+          "status": 301,
+          "location": "https://shop.example.com/redirect-mid"
+        },
+        {
+          "url": "https://shop.example.com/redirect-mid",
+          "status": 301,
+          "location": "https://shop.example.com/about"
+        }
+      ],
+      "elapsed_ms": 0,
+      "error": null,
+      "crawled": true
+    },
+    {
+      "url": "https://shop.example.com/missing",
+      "final_url": "https://shop.example.com/missing",
+      "status": 404,
+      "depth": 1,
+      "content_type": "text/html",
+      "title": null,
+      "meta_description": null,
+      "h1_count": 0,
+      "word_count": 0,
+      "internal_links": 0,
+      "redirect_chain": [],
+      "elapsed_ms": 0,
+      "error": null,
+      "crawled": true
+    },
+    {
+      "url": "https://shop.example.com/error",
+      "final_url": "https://shop.example.com/error",
+      "status": 500,
+      "depth": 1,
+      "content_type": "text/html",
+      "title": null,
+      "meta_description": null,
+      "h1_count": 0,
+      "word_count": 0,
+      "internal_links": 0,
+      "redirect_chain": [],
+      "elapsed_ms": 0,
+      "error": null,
+      "crawled": true
+    },
+    {
+      "url": "https://shop.example.com/loop-a",
+      "final_url": "https://shop.example.com/loop-a",
+      "status": null,
+      "depth": 1,
+      "content_type": "",
+      "title": null,
+      "meta_description": null,
+      "h1_count": 0,
+      "word_count": 0,
+      "internal_links": 0,
+      "redirect_chain": [
+        {
+          "url": "https://shop.example.com/loop-a",
+          "status": 301,
+          "location": "https://shop.example.com/loop-b"
+        },
+        {
+          "url": "https://shop.example.com/loop-b",
+          "status": 301,
+          "location": "https://shop.example.com/loop-a"
+        }
+      ],
+      "elapsed_ms": 0,
+      "error": "Redirect loop detected.",
+      "crawled": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "e71117e65ea8",
+      "rule_id": "BROKEN_INTERNAL_LINK",
+      "title": "Broken internal link",
+      "category": "Links",
+      "severity": "critical",
+      "finding_type": "defect",
+      "url": "https://shop.example.com/error",
+      "evidence": "https://shop.example.com/error returned HTTP 500. Linked from 1 page(s), anchor text \"Status\": https://shop.example.com/",
+      "explanation": "One or more pages link to an internal URL that returned an error status.",
+      "suggestion": "Update or remove the broken links on the linking pages, or redirect the broken URL to a relevant live page.",
+      "effort": "low",
+      "confidence": 0.95,
+      "priority_score": 95.0,
+      "related_urls": [
+        "https://shop.example.com/"
+      ]
+    },
+    {
+      "id": "2e63693512cc",
+      "rule_id": "TITLE_MISSING",
+      "title": "Missing title tag",
+      "category": "Titles",
+      "severity": "high",
+      "finding_type": "defect",
+      "url": "https://shop.example.com/contact",
+      "evidence": "No <title> element found in the HTML <head>.",
+      "explanation": "The page has no <title> element. Titles are a primary source for the clickable headline in search results.",
+      "suggestion": "Add a unique, descriptive <title> (roughly 30–60 characters) that includes the page's main topic.",
+      "effort": "low",
+      "confidence": 1.0,
+      "priority_score": 75.0,
+      "related_urls": []
+    },
+    {
+      "id": "d6d115ed776b",
+      "rule_id": "BROKEN_INTERNAL_LINK",
+      "title": "Broken internal link",
+      "category": "Links",
+      "severity": "high",
+      "finding_type": "defect",
+      "url": "https://shop.example.com/missing",
+      "evidence": "https://shop.example.com/missing returned HTTP 404. Linked from 2 page(s), anchor text \"Gift cards\": https://shop.example.com/, https://shop.example.com/blog",
+      "explanation": "One or more pages link to an internal URL that returned an error status.",
+      "suggestion": "Update or remove the broken links on the linking pages, or redirect the broken URL to a relevant live page.",
+      "effort": "low",
+      "confidence": 0.95,
+      "priority_score": 71.2,
+      "related_urls": [
+        "https://shop.example.com/",
+        "https://shop.example.com/blog"
+      ]
+    },
+    {
+      "id": "80e10c69db3b",
+      "rule_id": "REDIRECT_LOOP",
+      "title": "Redirect loop or excessive redirects",
+      "category": "Redirects",
+      "severity": "high",
+      "finding_type": "defect",
+      "url": "https://shop.example.com/loop-a",
+      "evidence": "Redirect loop detected. Hops: https://shop.example.com/loop-a → https://shop.example.com/loop-b",
+      "explanation": "The URL redirects in a loop or exceeds the redirect limit, so it never resolves to a page.",
+      "suggestion": "Fix the redirect rules so the URL resolves to a single final page in one hop.",
+      "effort": "medium",
+      "confidence": 1.0,
+      "priority_score": 60.0,
+      "related_urls": [
+        "https://shop.example.com/"
+      ]
+    },
+    {
+      "id": "d34418ad11ee",
+      "rule_id": "REDIRECT_CHAIN",
+      "title": "Redirect chain",
+      "category": "Redirects",
+      "severity": "medium",
+      "finding_type": "defect",
+      "url": "https://shop.example.com/old-page",
+      "evidence": "2 redirects: https://shop.example.com/old-page (301) → https://shop.example.com/redirect-mid (301) → https://shop.example.com/about (200)",
+      "explanation": "The URL passes through two or more redirects before reaching the final page. Chains slow users down and waste crawl budget.",
+      "suggestion": "Point the first URL (and any internal links to it) directly at the final destination with a single 301 redirect.",
+      "effort": "low",
+      "confidence": 1.0,
+      "priority_score": 50.0,
+      "related_urls": [
+        "https://shop.example.com/"
+      ]
+    },
+    {
+      "id": "697174422336",
+      "rule_id": "MIXED_CONTENT",
+      "title": "Insecure (HTTP) resources on HTTPS page",
+      "category": "Security",
+      "severity": "medium",
+      "finding_type": "defect",
+      "url": "https://shop.example.com/products",
+      "evidence": "1 insecure resource(s), e.g. http://cdn.example.net/bowl.jpg",
+      "explanation": "This HTTPS page loads images, scripts, stylesheets or frames over plain HTTP. Browsers may block them or show warnings.",
+      "suggestion": "Load these resources over HTTPS (or use protocol-relative/relative URLs).",
+      "effort": "low",
+      "confidence": 0.85,
+      "priority_score": 42.5,
+      "related_urls": [
+        "http://cdn.example.net/bowl.jpg"
+      ]
+    },
+    {
+      "id": "7c9b6bbc682c",
+      "rule_id": "VIEWPORT_MISSING",
+      "title": "Missing viewport meta tag",
+      "category": "Mobile",
+      "severity": "medium",
+      "finding_type": "defect",
+      "url": "https://shop.example.com/contact",
+      "evidence": "No <meta name=\"viewport\"> tag found.",
+      "explanation": "No <meta name=\"viewport\"> was found, so mobile browsers may render the page at desktop width.",
+      "suggestion": "Add <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">.",
+      "effort": "low",
+      "confidence": 0.85,
+      "priority_score": 42.5,
+      "related_urls": []
+    },
+    {
+      "id": "9bf4d6d5ef57",
+      "rule_id": "IMG_ALT_MISSING",
+      "title": "Images missing alt attribute",
+      "category": "Images",
+      "severity": "medium",
+      "finding_type": "defect",
+      "url": "https://shop.example.com/about",
+      "evidence": "1 of 2 images have no alt attribute. Examples: https://shop.example.com/img/team.jpg",
+      "explanation": "Some <img> elements have no alt attribute at all. Alt text is needed for screen readers and helps image search. (Empty alt=\"\" is correct for decorative images and is not flagged.)",
+      "suggestion": "Add descriptive alt text to meaningful images, and alt=\"\" to purely decorative ones.",
+      "effort": "medium",
+      "confidence": 0.95,
+      "priority_score": 38.0,
+      "related_urls": [
+        "https://shop.example.com/img/team.jpg"
+      ]
+    },
+    {
+      "id": "b721edf5af41",
+      "rule_id": "NOINDEX",
+      "title": "Page is set to noindex",
+      "category": "Indexability",
+      "severity": "high",
+      "finding_type": "recommendation",
+      "url": "https://shop.example.com/contact",
+      "evidence": "X-Robots-Tag: noindex",
+      "explanation": "A robots meta tag or X-Robots-Tag header tells search engines not to index this page. If unintentional, the page cannot appear in search results.",
+      "suggestion": "If the page should rank, remove 'noindex' from the robots meta tag / X-Robots-Tag header. If intentional, no action is needed.",
+      "effort": "low",
+      "confidence": 0.6,
+      "priority_score": 36.0,
+      "related_urls": []
+    },
+    {
+      "id": "eb3600a04ef1",
+      "rule_id": "H1_MISSING",
+      "title": "Missing H1 heading",
+      "category": "Headings",
+      "severity": "medium",
+      "finding_type": "recommendation",
+      "url": "https://shop.example.com/about",
+      "evidence": "No <h1> element found in the HTML.",
+      "explanation": "No <h1> was found in the HTML. A clear main heading helps users and search engines understand the page topic. (Content rendered only by JavaScript is not visible to this crawler.)",
+      "suggestion": "Add one visible <h1> that states the page's main topic.",
+      "effort": "low",
+      "confidence": 0.9,
+      "priority_score": 36.0,
+      "related_urls": []
+    },
+    {
+      "id": "630a8e73a0d4",
+      "rule_id": "META_DESC_MISSING",
+      "title": "Missing meta description",
+      "category": "Meta Descriptions",
+      "severity": "medium",
+      "finding_type": "recommendation",
+      "url": "https://shop.example.com/about",
+      "evidence": "No <meta name=\"description\"> tag found.",
+      "explanation": "No meta description was found. Search engines may generate a snippet from page text instead; a written description gives you more control over the snippet.",
+      "suggestion": "Add a unique meta description (roughly 50–160 characters) summarising the page and its value.",
+      "effort": "low",
+      "confidence": 0.9,
+      "priority_score": 36.0,
+      "related_urls": []
+    },
+    {
+      "id": "896ca0dbb933",
+      "rule_id": "META_DESC_DUPLICATE",
+      "title": "Duplicate meta description across pages",
+      "category": "Meta Descriptions",
+      "severity": "low",
+      "finding_type": "defect",
+      "url": "https://shop.example.com/",
+      "evidence": "\"Handmade ceramics and homeware, designed in small batches and shipped worldwide from our studio.\" is shared by 2 pages: https://shop.example.com/, https://shop.example.com/contact",
+      "explanation": "Several crawled pages share exactly the same meta description.",
+      "suggestion": "Write a distinct description for each page.",
+      "effort": "low",
+      "confidence": 0.85,
+      "priority_score": 21.2,
+      "related_urls": [
+        "https://shop.example.com/contact"
+      ]
+    },
+    {
+      "id": "ba02f61d4253",
+      "rule_id": "META_DESC_DUPLICATE",
+      "title": "Duplicate meta description across pages",
+      "category": "Meta Descriptions",
+      "severity": "low",
+      "finding_type": "defect",
+      "url": "https://shop.example.com/blog",
+      "evidence": "\"Browse our full range.\" is shared by 2 pages: https://shop.example.com/products, https://shop.example.com/blog",
+      "explanation": "Several crawled pages share exactly the same meta description.",
+      "suggestion": "Write a distinct description for each page.",
+      "effort": "low",
+      "confidence": 0.85,
+      "priority_score": 21.2,
+      "related_urls": [
+        "https://shop.example.com/products"
+      ]
+    },
+    {
+      "id": "16ebc240494c",
+      "rule_id": "META_DESC_DUPLICATE",
+      "title": "Duplicate meta description across pages",
+      "category": "Meta Descriptions",
+      "severity": "low",
+      "finding_type": "defect",
+      "url": "https://shop.example.com/contact",
+      "evidence": "\"Handmade ceramics and homeware, designed in small batches and shipped worldwide from our studio.\" is shared by 2 pages: https://shop.example.com/, https://shop.example.com/contact",
+      "explanation": "Several crawled pages share exactly the same meta description.",
+      "suggestion": "Write a distinct description for each page.",
+      "effort": "low",
+      "confidence": 0.85,
+      "priority_score": 21.2,
+      "related_urls": [
+        "https://shop.example.com/"
+      ]
+    },
+    {
+      "id": "f94b5e12f48b",
+      "rule_id": "META_DESC_DUPLICATE",
+      "title": "Duplicate meta description across pages",
+      "category": "Meta Descriptions",
+      "severity": "low",
+      "finding_type": "defect",
+      "url": "https://shop.example.com/products",
+      "evidence": "\"Browse our full range.\" is shared by 2 pages: https://shop.example.com/products, https://shop.example.com/blog",
+      "explanation": "Several crawled pages share exactly the same meta description.",
+      "suggestion": "Write a distinct description for each page.",
+      "effort": "low",
+      "confidence": 0.85,
+      "priority_score": 21.2,
+      "related_urls": [
+        "https://shop.example.com/blog"
+      ]
+    },
+    {
+      "id": "7113dc03a4f0",
+      "rule_id": "CANONICAL_MISSING",
+      "title": "Missing canonical tag",
+      "category": "Canonicalization",
+      "severity": "low",
+      "finding_type": "recommendation",
+      "url": "https://shop.example.com/about",
+      "evidence": "No <link rel=\"canonical\"> found.",
+      "explanation": "No rel=\"canonical\" link was found. Canonicals help consolidate duplicate URLs (e.g. with tracking parameters).",
+      "suggestion": "Add a self-referencing <link rel=\"canonical\"> with the preferred absolute URL.",
+      "effort": "low",
+      "confidence": 0.9,
+      "priority_score": 18.0,
+      "related_urls": []
+    },
+    {
+      "id": "b124917d8077",
+      "rule_id": "LINK_TO_REDIRECT",
+      "title": "Internal links point to redirecting URLs",
+      "category": "Links",
+      "severity": "low",
+      "finding_type": "recommendation",
+      "url": "https://shop.example.com/old-page",
+      "evidence": "https://shop.example.com/old-page redirects (301) to https://shop.example.com/about. Linked from 1 page(s): https://shop.example.com/",
+      "explanation": "Internal links point to a URL that redirects. It works, but costs an extra request for every visit and crawl.",
+      "suggestion": "Update the internal links to point directly at the final URL.",
+      "effort": "low",
+      "confidence": 0.9,
+      "priority_score": 18.0,
+      "related_urls": [
+        "https://shop.example.com/"
+      ]
+    },
+    {
+      "id": "11bfded26308",
+      "rule_id": "LANG_MISSING",
+      "title": "Missing html lang attribute",
+      "category": "Accessibility",
+      "severity": "low",
+      "finding_type": "recommendation",
+      "url": "https://shop.example.com/contact",
+      "evidence": "<html> element has no lang attribute.",
+      "explanation": "The <html> element has no lang attribute, which helps screen readers and language detection.",
+      "suggestion": "Add the page language, e.g. <html lang=\"en\">.",
+      "effort": "low",
+      "confidence": 0.8,
+      "priority_score": 16.0,
+      "related_urls": []
+    },
+    {
+      "id": "f195824f2523",
+      "rule_id": "HEADING_SKIP",
+      "title": "Skipped heading level",
+      "category": "Headings",
+      "severity": "low",
+      "finding_type": "recommendation",
+      "url": "https://shop.example.com/products",
+      "evidence": "H2 \"Bowls\" is followed by H4 \"Large bowls\".",
+      "explanation": "The heading hierarchy skips a level (for example an H2 followed directly by an H4). This mainly affects accessibility and document structure.",
+      "suggestion": "Use heading levels in order (H1 → H2 → H3) to reflect the content outline.",
+      "effort": "low",
+      "confidence": 0.7,
+      "priority_score": 14.0,
+      "related_urls": []
+    },
+    {
+      "id": "3a5504c921d4",
+      "rule_id": "TITLE_TOO_LONG",
+      "title": "Title may be truncated in results",
+      "category": "Titles",
+      "severity": "low",
+      "finding_type": "recommendation",
+      "url": "https://shop.example.com/blog",
+      "evidence": "Title (98 chars): \"The Example Shop Journal: Stories, Studio Notes, Glazing Experiments and Behind-the-Scenes Updates\"",
+      "explanation": "The title is longer than 60 characters. Search engines truncate by pixel width, so this is an approximation, not a hard limit.",
+      "suggestion": "Move the most important words to the front and aim for roughly 30–60 characters.",
+      "effort": "low",
+      "confidence": 0.6,
+      "priority_score": 12.0,
+      "related_urls": []
+    },
+    {
+      "id": "73628d62a66a",
+      "rule_id": "H1_MULTIPLE",
+      "title": "Multiple H1 headings",
+      "category": "Headings",
+      "severity": "low",
+      "finding_type": "recommendation",
+      "url": "https://shop.example.com/blog",
+      "evidence": "2 H1 headings: \"Journal\"; \"Latest posts\"",
+      "explanation": "The page has more than one <h1>. This is valid HTML and not a confirmed problem, but a single main heading usually gives a clearer structure.",
+      "suggestion": "Consider keeping one H1 for the main topic and using H2/H3 for sections.",
+      "effort": "low",
+      "confidence": 0.5,
+      "priority_score": 10.0,
+      "related_urls": []
+    },
+    {
+      "id": "99ad20f42c15",
+      "rule_id": "META_DESC_LENGTH",
+      "title": "Meta description length outside typical range",
+      "category": "Meta Descriptions",
+      "severity": "low",
+      "finding_type": "recommendation",
+      "url": "https://shop.example.com/blog",
+      "evidence": "Meta description (22 chars): \"Browse our full range.\"",
+      "explanation": "The description is outside the commonly displayed range of about 50–160 characters. This is guidance only; snippet length varies.",
+      "suggestion": "Aim for roughly 50–160 characters with the key message first.",
+      "effort": "low",
+      "confidence": 0.5,
+      "priority_score": 10.0,
+      "related_urls": []
+    },
+    {
+      "id": "6bc449be52bc",
+      "rule_id": "META_DESC_LENGTH",
+      "title": "Meta description length outside typical range",
+      "category": "Meta Descriptions",
+      "severity": "low",
+      "finding_type": "recommendation",
+      "url": "https://shop.example.com/products",
+      "evidence": "Meta description (22 chars): \"Browse our full range.\"",
+      "explanation": "The description is outside the commonly displayed range of about 50–160 characters. This is guidance only; snippet length varies.",
+      "suggestion": "Aim for roughly 50–160 characters with the key message first.",
+      "effort": "low",
+      "confidence": 0.5,
+      "priority_score": 10.0,
+      "related_urls": []
+    },
+    {
+      "id": "c64c04a0a764",
+      "rule_id": "TITLE_TOO_SHORT",
+      "title": "Very short title",
+      "category": "Titles",
+      "severity": "low",
+      "finding_type": "recommendation",
+      "url": "https://shop.example.com/about",
+      "evidence": "Title (4 chars): \"Shop\"",
+      "explanation": "The title is shorter than 15 characters, which may not describe the page well.",
+      "suggestion": "Expand the title to describe the page's topic (and brand, if useful).",
+      "effort": "low",
+      "confidence": 0.5,
+      "priority_score": 10.0,
+      "related_urls": []
+    },
+    {
+      "id": "f19637d8ce86",
+      "rule_id": "THIN_CONTENT",
+      "title": "Low word count",
+      "category": "Content",
+      "severity": "low",
+      "finding_type": "recommendation",
+      "url": "https://shop.example.com/about",
+      "evidence": "5 words of visible text found in the HTML.",
+      "explanation": "Fewer than 150 words of text were found in the HTML. Word count is not a ranking factor by itself, and pages rendered with JavaScript may appear thin to this crawler.",
+      "suggestion": "Check whether the page fully answers its visitors' needs; add useful content if it does not.",
+      "effort": "medium",
+      "confidence": 0.4,
+      "priority_score": 6.4,
+      "related_urls": []
+    },
+    {
+      "id": "16727e73deb8",
+      "rule_id": "THIN_CONTENT",
+      "title": "Low word count",
+      "category": "Content",
+      "severity": "low",
+      "finding_type": "recommendation",
+      "url": "https://shop.example.com/contact",
+      "evidence": "3 words of visible text found in the HTML.",
+      "explanation": "Fewer than 150 words of text were found in the HTML. Word count is not a ranking factor by itself, and pages rendered with JavaScript may appear thin to this crawler.",
+      "suggestion": "Check whether the page fully answers its visitors' needs; add useful content if it does not.",
+      "effort": "medium",
+      "confidence": 0.4,
+      "priority_score": 6.4,
+      "related_urls": []
+    },
+    {
+      "id": "86af09a7d00c",
+      "rule_id": "ROBOTS_BLOCKED",
+      "title": "Internal URLs blocked by robots.txt",
+      "category": "Crawlability",
+      "severity": "info",
+      "finding_type": "informational",
+      "url": "https://shop.example.com/",
+      "evidence": "1 internal URL(s) disallowed, e.g. https://shop.example.com/admin/login",
+      "explanation": "Some internal links point to URLs disallowed by robots.txt. These were not crawled. This is often intentional (e.g. cart or admin pages).",
+      "suggestion": "Confirm that each blocked path is meant to be hidden from crawlers; unblock any that should be indexed.",
+      "effort": "low",
+      "confidence": 1.0,
+      "priority_score": 5.0,
+      "related_urls": [
+        "https://shop.example.com/admin/login"
+      ]
+    }
+  ],
+  "action_plan": [
+    {
+      "rule_id": "BROKEN_INTERNAL_LINK",
+      "title": "Broken internal link",
+      "category": "Links",
+      "severity": "critical",
+      "finding_type": "defect",
+      "affected_pages": 2,
+      "effort": "low",
+      "confidence": 0.95,
+      "priority_score": 100.0,
+      "suggestion": "Update or remove the broken links on the linking pages, or redirect the broken URL to a relevant live page.",
+      "example_urls": [
+        "https://shop.example.com/error",
+        "https://shop.example.com/missing"
+      ]
+    },
+    {
+      "rule_id": "TITLE_MISSING",
+      "title": "Missing title tag",
+      "category": "Titles",
+      "severity": "high",
+      "finding_type": "defect",
+      "affected_pages": 1,
+      "effort": "low",
+      "confidence": 1.0,
+      "priority_score": 75.0,
+      "suggestion": "Add a unique, descriptive <title> (roughly 30–60 characters) that includes the page's main topic.",
+      "example_urls": [
+        "https://shop.example.com/contact"
+      ]
+    },
+    {
+      "rule_id": "REDIRECT_LOOP",
+      "title": "Redirect loop or excessive redirects",
+      "category": "Redirects",
+      "severity": "high",
+      "finding_type": "defect",
+      "affected_pages": 1,
+      "effort": "medium",
+      "confidence": 1.0,
+      "priority_score": 60.0,
+      "suggestion": "Fix the redirect rules so the URL resolves to a single final page in one hop.",
+      "example_urls": [
+        "https://shop.example.com/loop-a"
+      ]
+    },
+    {
+      "rule_id": "REDIRECT_CHAIN",
+      "title": "Redirect chain",
+      "category": "Redirects",
+      "severity": "medium",
+      "finding_type": "defect",
+      "affected_pages": 1,
+      "effort": "low",
+      "confidence": 1.0,
+      "priority_score": 50.0,
+      "suggestion": "Point the first URL (and any internal links to it) directly at the final destination with a single 301 redirect.",
+      "example_urls": [
+        "https://shop.example.com/old-page"
+      ]
+    },
+    {
+      "rule_id": "MIXED_CONTENT",
+      "title": "Insecure (HTTP) resources on HTTPS page",
+      "category": "Security",
+      "severity": "medium",
+      "finding_type": "defect",
+      "affected_pages": 1,
+      "effort": "low",
+      "confidence": 0.85,
+      "priority_score": 42.5,
+      "suggestion": "Load these resources over HTTPS (or use protocol-relative/relative URLs).",
+      "example_urls": [
+        "https://shop.example.com/products"
+      ]
+    },
+    {
+      "rule_id": "VIEWPORT_MISSING",
+      "title": "Missing viewport meta tag",
+      "category": "Mobile",
+      "severity": "medium",
+      "finding_type": "defect",
+      "affected_pages": 1,
+      "effort": "low",
+      "confidence": 0.85,
+      "priority_score": 42.5,
+      "suggestion": "Add <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">.",
+      "example_urls": [
+        "https://shop.example.com/contact"
+      ]
+    },
+    {
+      "rule_id": "IMG_ALT_MISSING",
+      "title": "Images missing alt attribute",
+      "category": "Images",
+      "severity": "medium",
+      "finding_type": "defect",
+      "affected_pages": 1,
+      "effort": "medium",
+      "confidence": 0.95,
+      "priority_score": 38.0,
+      "suggestion": "Add descriptive alt text to meaningful images, and alt=\"\" to purely decorative ones.",
+      "example_urls": [
+        "https://shop.example.com/about"
+      ]
+    },
+    {
+      "rule_id": "NOINDEX",
+      "title": "Page is set to noindex",
+      "category": "Indexability",
+      "severity": "high",
+      "finding_type": "recommendation",
+      "affected_pages": 1,
+      "effort": "low",
+      "confidence": 0.6,
+      "priority_score": 36.0,
+      "suggestion": "If the page should rank, remove 'noindex' from the robots meta tag / X-Robots-Tag header. If intentional, no action is needed.",
+      "example_urls": [
+        "https://shop.example.com/contact"
+      ]
+    },
+    {
+      "rule_id": "H1_MISSING",
+      "title": "Missing H1 heading",
+      "category": "Headings",
+      "severity": "medium",
+      "finding_type": "recommendation",
+      "affected_pages": 1,
+      "effort": "low",
+      "confidence": 0.9,
+      "priority_score": 36.0,
+      "suggestion": "Add one visible <h1> that states the page's main topic.",
+      "example_urls": [
+        "https://shop.example.com/about"
+      ]
+    },
+    {
+      "rule_id": "META_DESC_MISSING",
+      "title": "Missing meta description",
+      "category": "Meta Descriptions",
+      "severity": "medium",
+      "finding_type": "recommendation",
+      "affected_pages": 1,
+      "effort": "low",
+      "confidence": 0.9,
+      "priority_score": 36.0,
+      "suggestion": "Add a unique meta description (roughly 50–160 characters) summarising the page and its value.",
+      "example_urls": [
+        "https://shop.example.com/about"
+      ]
+    },
+    {
+      "rule_id": "META_DESC_DUPLICATE",
+      "title": "Duplicate meta description across pages",
+      "category": "Meta Descriptions",
+      "severity": "low",
+      "finding_type": "defect",
+      "affected_pages": 4,
+      "effort": "low",
+      "confidence": 0.85,
+      "priority_score": 28.5,
+      "suggestion": "Write a distinct description for each page.",
+      "example_urls": [
+        "https://shop.example.com/",
+        "https://shop.example.com/blog",
+        "https://shop.example.com/contact",
+        "https://shop.example.com/products"
+      ]
+    },
+    {
+      "rule_id": "CANONICAL_MISSING",
+      "title": "Missing canonical tag",
+      "category": "Canonicalization",
+      "severity": "low",
+      "finding_type": "recommendation",
+      "affected_pages": 1,
+      "effort": "low",
+      "confidence": 0.9,
+      "priority_score": 18.0,
+      "suggestion": "Add a self-referencing <link rel=\"canonical\"> with the preferred absolute URL.",
+      "example_urls": [
+        "https://shop.example.com/about"
+      ]
+    },
+    {
+      "rule_id": "LINK_TO_REDIRECT",
+      "title": "Internal links point to redirecting URLs",
+      "category": "Links",
+      "severity": "low",
+      "finding_type": "recommendation",
+      "affected_pages": 1,
+      "effort": "low",
+      "confidence": 0.9,
+      "priority_score": 18.0,
+      "suggestion": "Update the internal links to point directly at the final URL.",
+      "example_urls": [
+        "https://shop.example.com/old-page"
+      ]
+    },
+    {
+      "rule_id": "LANG_MISSING",
+      "title": "Missing html lang attribute",
+      "category": "Accessibility",
+      "severity": "low",
+      "finding_type": "recommendation",
+      "affected_pages": 1,
+      "effort": "low",
+      "confidence": 0.8,
+      "priority_score": 16.0,
+      "suggestion": "Add the page language, e.g. <html lang=\"en\">.",
+      "example_urls": [
+        "https://shop.example.com/contact"
+      ]
+    },
+    {
+      "rule_id": "HEADING_SKIP",
+      "title": "Skipped heading level",
+      "category": "Headings",
+      "severity": "low",
+      "finding_type": "recommendation",
+      "affected_pages": 1,
+      "effort": "low",
+      "confidence": 0.7,
+      "priority_score": 14.0,
+      "suggestion": "Use heading levels in order (H1 → H2 → H3) to reflect the content outline.",
+      "example_urls": [
+        "https://shop.example.com/products"
+      ]
+    },
+    {
+      "rule_id": "TITLE_TOO_LONG",
+      "title": "Title may be truncated in results",
+      "category": "Titles",
+      "severity": "low",
+      "finding_type": "recommendation",
+      "affected_pages": 1,
+      "effort": "low",
+      "confidence": 0.6,
+      "priority_score": 12.0,
+      "suggestion": "Move the most important words to the front and aim for roughly 30–60 characters.",
+      "example_urls": [
+        "https://shop.example.com/blog"
+      ]
+    },
+    {
+      "rule_id": "META_DESC_LENGTH",
+      "title": "Meta description length outside typical range",
+      "category": "Meta Descriptions",
+      "severity": "low",
+      "finding_type": "recommendation",
+      "affected_pages": 2,
+      "effort": "low",
+      "confidence": 0.5,
+      "priority_score": 11.7,
+      "suggestion": "Aim for roughly 50–160 characters with the key message first.",
+      "example_urls": [
+        "https://shop.example.com/blog",
+        "https://shop.example.com/products"
+      ]
+    },
+    {
+      "rule_id": "H1_MULTIPLE",
+      "title": "Multiple H1 headings",
+      "category": "Headings",
+      "severity": "low",
+      "finding_type": "recommendation",
+      "affected_pages": 1,
+      "effort": "low",
+      "confidence": 0.5,
+      "priority_score": 10.0,
+      "suggestion": "Consider keeping one H1 for the main topic and using H2/H3 for sections.",
+      "example_urls": [
+        "https://shop.example.com/blog"
+      ]
+    },
+    {
+      "rule_id": "TITLE_TOO_SHORT",
+      "title": "Very short title",
+      "category": "Titles",
+      "severity": "low",
+      "finding_type": "recommendation",
+      "affected_pages": 1,
+      "effort": "low",
+      "confidence": 0.5,
+      "priority_score": 10.0,
+      "suggestion": "Expand the title to describe the page's topic (and brand, if useful).",
+      "example_urls": [
+        "https://shop.example.com/about"
+      ]
+    },
+    {
+      "rule_id": "THIN_CONTENT",
+      "title": "Low word count",
+      "category": "Content",
+      "severity": "low",
+      "finding_type": "recommendation",
+      "affected_pages": 2,
+      "effort": "medium",
+      "confidence": 0.4,
+      "priority_score": 7.5,
+      "suggestion": "Check whether the page fully answers its visitors' needs; add useful content if it does not.",
+      "example_urls": [
+        "https://shop.example.com/about",
+        "https://shop.example.com/contact"
+      ]
+    },
+    {
+      "rule_id": "ROBOTS_BLOCKED",
+      "title": "Internal URLs blocked by robots.txt",
+      "category": "Crawlability",
+      "severity": "info",
+      "finding_type": "informational",
+      "affected_pages": 1,
+      "effort": "low",
+      "confidence": 1.0,
+      "priority_score": 5.0,
+      "suggestion": "Confirm that each blocked path is meant to be hidden from crawlers; unblock any that should be indexed.",
+      "example_urls": [
+        "https://shop.example.com/"
+      ]
+    }
+  ],
+  "limitations": [
+    "SYNTHETIC DEMO: shop.example.com is a fictional fixture website served from memory. These findings are genuine crawler output for that fixture, not observations of any real company.",
+    "Only raw HTML is analysed; JavaScript is never executed, so content rendered client-side may be missed.",
+    "robots.txt is always respected; disallowed URLs are not crawled.",
+    "Only pages on the same host as the start URL ('www.' treated as equivalent) are crawled.",
+    "Severity, priority and health scores are transparent heuristics, not Google metrics or ranking factors.",
+    "Length thresholds for titles and descriptions are approximations; search engines truncate by pixel width.",
+    "Pages behind logins, paywalls or bot protection are not accessed; such pages may appear as errors.",
+    "Results reflect a single point in time; transient server errors can appear and should be re-tested."
+  ],
+  "data_label": "synthetic",
+  "ai_summary": null
+}
